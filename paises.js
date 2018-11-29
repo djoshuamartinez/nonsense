@@ -205,6 +205,7 @@ var possibleCounts = [... new Set(vowelCount.map(vc=>vc[1])) ].sort((a,b)=>a-b);
 for(let n of possibleCounts){
     console.log(`Países con ${n} vocales`);
     let sameVoweledCountries = vowelCount.filter(vc=>vc[1]==n).map(vc=>vc[0]);
+
     console.log(sameVoweledCountries.join(', '));
     console.log(`Total: ${sameVoweledCountries.length}`);
     console.log('');
